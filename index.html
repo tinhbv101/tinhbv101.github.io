@@ -26,7 +26,7 @@
 
 <script>
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(60, 1, 1, 10000);
+    const camera = new THREE.PerspectiveCamera(60, 1, 1, 200);
     camera.position.set(20, 12, 100).setLength(200);
     const renderer = new THREE.WebGLRenderer({
         antialias: true
@@ -41,10 +41,10 @@
     controls.enablePan = false;
     controls.update();
     
-    const xSize = 50;
-    const ySize = 50;
-    const zSize = 50;
-    const density = 7;
+    const xSize = 30;
+    const ySize = 30;
+    const zSize = 30;
+    const density = 5;
     const nParticles = xSize * ySize * zSize * density;
     
     const positions = [];
